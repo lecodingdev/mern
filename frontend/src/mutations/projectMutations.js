@@ -62,4 +62,12 @@ const UPDATE_PROJECT = gql`
   }
 `;
 
-export { ADD_PROJECT, DELETE_PROJECT, UPDATE_PROJECT };
+const TRACK_PR_MUTATION = gql`
+  mutation SomeOptionalMutationName ($id: ID!) {
+    trackPr(id: $id) {
+      id
+    }
+  }
+`;
+
+export { ADD_PROJECT, DELETE_PROJECT, UPDATE_PROJECT, TRACK_PR_MUTATION };
