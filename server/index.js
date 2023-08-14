@@ -22,8 +22,4 @@ app.use(
   })
 );
 
-app.get("/", (req, res) => {
-  res.json("Hello");
-})
-
 app.listen(port, console.log(`Server running on port ${port}`));
